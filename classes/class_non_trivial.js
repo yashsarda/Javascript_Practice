@@ -47,6 +47,10 @@ Complex.ZERO = new Complex(0, 0);
 Complex.ONE = new Complex(1, 0);
 Complex.I = new Complex(0, 1);
 
+Complex.prototype.conj = function() {
+    return new Complex(this.r, -this.i);
+}
+
 let c = new Complex(2, 3);
 let d = new Complex(c.i, c.r);
 
