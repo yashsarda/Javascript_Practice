@@ -5,6 +5,8 @@ function Range(from, to) {
 
 Range.prototype = {
 
+    constructor: Range,
+
     includes: function(x) {
         return (x >= this.from && x <= this.to);
     },
