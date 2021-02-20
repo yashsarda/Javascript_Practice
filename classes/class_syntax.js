@@ -23,3 +23,10 @@ let r = new Range(1, 3);
 console.log(r.includes(2));
 console.log(r.toString());
 console.log([...r]);
+
+const o = {
+    class_property: Range
+};
+
+let new_range = new o.class_property(1, 3);
+console.log(new_range.includes(1));
