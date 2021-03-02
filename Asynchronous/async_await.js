@@ -40,6 +40,9 @@ const makeSmoothie2 = async () => {
   const a = await getFruit("pineapple");
   const b = await getFruit("apple");
 
+  // Using the concurrent
+  // const [a, b] = await Promise.all([getFruit("pineapple"), getFruit("apple")]);
+
   return [a, b];
 };
 
